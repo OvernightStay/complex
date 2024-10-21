@@ -1,0 +1,23 @@
+.user {
+  position: absolute;
+  bottom: 140px;
+  right: 50px;
+}
+
+.animate {
+  animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

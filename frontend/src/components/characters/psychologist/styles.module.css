@@ -1,0 +1,26 @@
+.psychologist {
+  position: absolute;
+  bottom: 242px;
+}
+
+.animate {
+  animation: wave 0.5s 3;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0px);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(5px);
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: translateY(0px);
+
+    transform: rotate(0deg);
+  }
+}

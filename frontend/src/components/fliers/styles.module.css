@@ -1,0 +1,36 @@
+.fliersContainer {
+  position: absolute;
+  right: 336.7px;
+  top: 108px;
+}
+
+.fliers {
+  position: relative;
+  width: 190.3px;
+  height: 309px;
+  animation: pulse 0.5s 2;
+}
+
+.flier1 {
+  position: absolute;
+}
+
+.flier2 {
+  position: absolute;
+  bottom: 14px;
+  left: 32.3px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

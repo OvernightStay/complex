@@ -1,0 +1,6 @@
+.teaContainer {
+  width: 286px;
+  height: 180px;
+  transform: translate(250px, 650px);
+  position: relative;
+}

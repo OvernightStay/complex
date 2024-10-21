@@ -1,0 +1,30 @@
+.michael {
+  position: absolute;
+  bottom: 242px;
+}
+
+.middle {
+  left: 481px;
+}
+
+.left {
+  left: 16px;
+}
+
+.animate {
+  animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

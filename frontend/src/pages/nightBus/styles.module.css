@@ -1,0 +1,72 @@
+.nightBusContainer {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.nightBusIntro {
+  background-image: url("/assets/background/background-night-bus-intro.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 135px;
+}
+
+.nightBusEntryBackground {
+  position: relative;
+  overflow: hidden;
+}
+
+.nightBusEntryBackgroundImage {
+  width: 1163px;
+  height: 725px;
+}
+
+.nightBusStory {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 110px;
+  transform: translateZ(-50px);
+  perspective: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.background1 {
+  background-image: url("/assets/background/background-night-bus-intro.svg");
+}
+
+.background2 {
+  background-image: url("/assets/background/background-intro.svg");
+}
+
+.nightBusGame {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.nightBusGameIntro {
+  background-image: url("/assets/background/background-intro.svg");
+  background-position: top;
+  background-size: auto;
+}
+
+.nightBusGamePlay {
+  background-image: url("/assets/background/background-night-bus-game.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.finalResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

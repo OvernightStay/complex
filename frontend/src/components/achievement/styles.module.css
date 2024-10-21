@@ -1,0 +1,40 @@
+.achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 480px;
+  padding: 40px 80px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.achievement h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #629f42;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.achievement img {
+  width: 147px;
+  height: 147px;
+}
+
+.achievement button {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #629f42;
+  color: #fff;
+}

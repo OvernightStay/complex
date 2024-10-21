@@ -1,0 +1,30 @@
+.home {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.home:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.animate {
+  animation: pulse 0.5s 3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

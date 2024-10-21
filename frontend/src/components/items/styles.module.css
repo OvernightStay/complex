@@ -1,0 +1,77 @@
+.itemBtn {
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.itemBtn:hover {
+  transform: scale(1.1);
+}
+
+.kettle {
+  position: absolute;
+  left: 14px;
+  bottom: 158px;
+}
+
+.tea-container-1 {
+  bottom: 0;
+  left: 0;
+}
+
+.tea-container-2 {
+  bottom: 100px;
+  left: 100px;
+}
+
+.tea-container-3 {
+  bottom: 10px;
+  right: 0;
+}
+
+.meal-container-1 {
+  bottom: 1px;
+  left: 0;
+}
+
+.meal-container-2 {
+  bottom: 1px;
+  left: 160px;
+}
+
+.meal-container-3 {
+  bottom: 20px;
+  right: 0;
+}
+
+.bread-container-1 {
+  top: 0;
+  left: 0;
+}
+
+.bread-container-2 {
+  top: 20px;
+  left: 50px;
+}
+
+.bread-container-3 {
+  top: 40px;
+  left: 100px;
+}
+
+.meal-tray {
+  bottom: 20px;
+  left: 0;
+}
+
+.tea-tray {
+  bottom: -10px;
+  left: 100px;
+  z-index: 1;
+}
+
+.bread-tray {
+  bottom: 0;
+  left: 160px;
+}

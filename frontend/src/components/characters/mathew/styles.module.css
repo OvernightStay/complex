@@ -1,0 +1,27 @@
+.mathew {
+  position: absolute;
+  bottom: 313px;
+}
+
+.right {
+  right: 0;
+}
+
+.animate {
+  left: 481px;
+  animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

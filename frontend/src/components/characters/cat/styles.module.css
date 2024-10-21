@@ -1,0 +1,30 @@
+.cat {
+  position: absolute;
+  bottom: 90px;
+}
+
+.animate {
+  animation: breathe 2s infinite;
+}
+
+.right {
+  right: 50px;
+}
+
+.left {
+  left: 50px;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

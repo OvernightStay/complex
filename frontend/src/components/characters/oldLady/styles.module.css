@@ -1,0 +1,28 @@
+.oldLady {
+  position: absolute;
+  height: fit-content;
+  bottom: 313px;
+}
+
+.right {
+  right: 0px;
+}
+
+.animate {
+  left: 481px;
+  animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,32 @@
+.test {
+  position: absolute;
+  bottom: 313px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 465px;
+}
+
+.right {
+  right: 0;
+}
+
+.animate {
+  left: 481px;
+  animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(7px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
