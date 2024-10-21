@@ -168,3 +168,4 @@ cython_debug/
 **/migrations/*
 !**/migrations/__init__.py
 /pro/staticfiles/
+.env
