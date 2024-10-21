@@ -104,7 +104,7 @@ SIMPLE_JWT = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ["https://overnightapp.pythonanywhere.com/", "http://91.219.151.79:8000", "91.219.151.79"]
+CSRF_TRUSTED_ORIGINS = ["https://overnightapp.pythonanywhere.com/", "http://91.219.151.79:8000"]
 
 ROOT_URLCONF = "pro.urls"
 
