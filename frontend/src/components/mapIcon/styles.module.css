@@ -1,0 +1,30 @@
+.map {
+  position: absolute;
+  top: 280px;
+  right: 40px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.map:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.animate {
+  animation: pulse 0.5s 3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

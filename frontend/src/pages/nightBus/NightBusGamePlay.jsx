@@ -103,6 +103,11 @@ export default function NightBusGamePlay() {
     setBreadPicked(true);
   }
 
+  function handleResetGame() {
+    setMood([]);
+    setCharacters(initialCharacters);
+  }
+
   return (
     <div
       className={`${s.nightBusGame} ${s.nightBusGamePlay} ${
@@ -163,7 +168,7 @@ export default function NightBusGamePlay() {
           <Result moodCount={moodCount} />
         </>
       ) : (
-        <FinalResult moodCount={moodCount} />
+        <FinalResult moodCount={moodCount} handleResetGame={handleResetGame} />
       )}
     </div>
   );

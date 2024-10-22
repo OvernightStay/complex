@@ -20,6 +20,7 @@ export default function Dialogue({
   playBtn,
   setLevel,
   homeLevel,
+  disabled,
 }) {
   const navigation = useNavigate();
   const [isAnswered, setAnswered] = useState(false);
@@ -62,7 +63,7 @@ export default function Dialogue({
         {playBtn ? (
           <PlayButton handlePlay={handlePlay} />
         ) : (
-          <NextButton handleStep={handleStep} />
+          <NextButton handleStep={handleStep} disabled={disabled} />
         )}
         {question ? (
           <Question

@@ -28,7 +28,14 @@ SECRET_KEY = "django-insecure-^telm$es(!j#w5^o62yow74bofn+ttu*5hg-l^515l(de@6+32
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "overnightapp.pythonanywhere.com", "http://91.219.151.79:8000", "http://91.219.151.79:3000", "91.219.151.79"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "overnightapp.pythonanywhere.com",
+    "http://91.219.151.79:8000",
+    "http://91.219.151.79:3000",
+    "91.219.151.79",
+]
 
 
 # Application definition
@@ -104,7 +111,10 @@ SIMPLE_JWT = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ["https://overnightapp.pythonanywhere.com/", "http://91.219.151.79:8000"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://overnightapp.pythonanywhere.com/",
+    "http://91.219.151.79:8000",
+]
 
 ROOT_URLCONF = "pro.urls"
 
@@ -179,12 +189,12 @@ USE_TZ = True
 
 
 # URL, по которому будут доступны статические файлы
-STATIC_URL = '/static/'
-STATIC_ROOT = '/static'
+STATIC_URL = "/static/"
+STATIC_ROOT = "/static"
 
 # Настройки медиа (если используются)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/media'
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "/media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

@@ -2,6 +2,13 @@
   position: absolute;
   top: 20px;
   right: 320px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.bag:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 
 .animate {

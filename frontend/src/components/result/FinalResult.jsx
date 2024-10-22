@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import s from "./styles.module.css";
 
-export default function FinalResult({ moodCount }) {
+export default function FinalResult({ moodCount, handleResetGame }) {
   let heading;
 
   const navigate = useNavigate();
@@ -28,7 +28,10 @@ export default function FinalResult({ moodCount }) {
         <span>{moodCount.bad} / 9</span>
       </div>
 
-      <button className={`${s.finalResultButton} ${s.primary}`}>
+      <button
+        className={`${s.finalResultButton} ${s.primary}`}
+        onClick={handleResetGame}
+      >
         Попробовать снова
       </button>
       <button

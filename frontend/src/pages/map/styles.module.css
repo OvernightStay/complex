@@ -1,0 +1,176 @@
+.mapContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.point {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.nursingHome {
+  width: 251px;
+  height: 231px;
+  left: 238px;
+  top: 69px;
+  background-image: url("/assets/map/nursing-home.svg");
+}
+
+.nursingHomeInactive:hover {
+  background-image: url("/assets/map/nursing-home-inactive.svg");
+}
+
+.nursingHomeActive:hover {
+  background-image: url("/assets/map/nursing-home-active.svg");
+}
+
+.rehab {
+  width: 231px;
+  height: 201px;
+  left: 512px;
+  top: 50px;
+  background-image: url("/assets/map/rehab.svg");
+}
+
+.rehabInactive:hover {
+  background-image: url("/assets/map/rehab-inactive.svg");
+}
+
+.rehabActive:hover {
+  background-image: url("/assets/map/rehab-active.svg");
+}
+
+.halfWayHome {
+  width: 221px;
+  height: 201px;
+  left: 997px;
+  top: 25px;
+  background-image: url("/assets/map/half-way-home.svg");
+}
+
+.halfWayHomeInactive:hover {
+  background-image: url("/assets/map/half-way-home-inactive.svg");
+}
+
+.halfWayHomeActive:hover {
+  background-image: url("/assets/map/half-way-home-active.svg");
+}
+
+.laundry {
+  width: 231px;
+  height: 201px;
+  left: 305px;
+  top: 292px;
+  background-image: url("/assets/map/laundry.svg");
+}
+
+.laundryInactive:hover {
+  background-image: url("/assets/map/laundry-inactive.svg");
+}
+
+.laundryActive:hover {
+  background-image: url("/assets/map/laundry-active.svg");
+}
+
+.consulting {
+  width: 201px;
+  height: 201px;
+  left: 605px;
+  top: 352px;
+  background-image: url("/assets/map/consulting.svg");
+}
+
+.consultingInactive:hover {
+  background-image: url("/assets/map/consulting-inactive.svg");
+}
+
+.consultingActive:hover {
+  background-image: url("/assets/map/consulting-active.svg");
+}
+
+.consultingActive:hover {
+  background-image: url("/assets/map/consulting-active.svg");
+}
+
+.nightHome {
+  width: 341px;
+  height: 151px;
+  left: 797px;
+  top: 237px;
+  background-image: url("/assets/map/night-home.svg");
+}
+
+.nightHomeInactive:hover {
+  background-image: url("/assets/map/night-home-inactive.svg");
+}
+
+.nightHomeActive:hover {
+  background-image: url("/assets/map/night-home-active.svg");
+}
+
+.distributionPoint {
+  width: 251px;
+  height: 161px;
+  left: 946px;
+  top: 414px;
+  background-image: url("/assets/map/distribution-point.svg");
+}
+
+.distributionPointActive:hover {
+  background-image: url("/assets/map/distribution-point-active.svg");
+}
+
+.psychologist {
+  width: 231px;
+  height: 201px;
+  left: 1047px;
+  top: 552px;
+  background-image: url("/assets/map/psychologist.svg");
+}
+
+.psychologistActive:hover {
+  background-image: url("/assets/map/psychologist-active.svg");
+}
+
+.heatingPoint {
+  width: 381px;
+  height: 201px;
+  left: 671px;
+  top: 583px;
+  background-image: url("/assets/map/heating-point.svg");
+}
+
+.heatingPointActive:hover {
+  background-image: url("/assets/map/heating-point-active.svg");
+}
+
+.neravnodush {
+  width: 351px;
+  height: 181px;
+  left: 21px;
+  top: 440px;
+  background-image: url("/assets/map/neravnodush.svg");
+}
+
+.neravnodushActive:hover {
+  background-image: url("/assets/map/neravnodush-active.svg");
+}
+
+.nightBus {
+  width: 301px;
+  height: 201px;
+  left: 380px;
+  top: 575px;
+  background-image: url("/assets/map/night-bus-active.svg");
+}

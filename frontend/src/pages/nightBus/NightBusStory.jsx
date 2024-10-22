@@ -12,10 +12,12 @@ import { useState } from "react";
 import Home from "../../components/homeIcon/Home";
 import Book from "../../components/book/Book";
 import Screen from "../screenChange/Screen";
+import { useNavigate } from "react-router-dom";
 
 export default function NightBusStory({ data, step, setStep, level }) {
   const [screen, setScreen] = useState(true);
   const [progress, setProgress] = useState([]);
+  const navigation = useNavigate();
   const falseCount = Number(
     progress.filter((value) => value === "false").length
   );
@@ -24,7 +26,7 @@ export default function NightBusStory({ data, step, setStep, level }) {
     setScreen(false);
   }, 5000);
 
-  if (falseCount >= 3) console.log("navigate to book");
+  if (falseCount >= 3) navigation("/book-mock");
 
   const status =
     falseCount === 1

@@ -9,7 +9,7 @@ import Dialogue from "../../components/dialogue/Dialogue";
 import Home from "../../components/homeIcon/Home";
 import Progress from "../../components/progress/Progress";
 import Settings from "../../components/settingsIcon/Settings";
-import Map from "../../components/map/Map";
+import MapIcon from "../../components/mapIcon/MapIcon";
 import CatIcon from "../../components/catIcon/CatIcon";
 
 export default function NightBusGameEnd({
@@ -26,6 +26,7 @@ export default function NightBusGameEnd({
   const experience = step === 4;
   const map = step >= 5;
   const catIcon = step >= 6;
+  const disabled = step === data.length - 1 || achievement;
 
   function handleGetAchievement() {
     setStep((prev) => prev + 1);
@@ -48,13 +49,14 @@ export default function NightBusGameEnd({
         navigate="test"
         setLevel={setLevel}
         homeLevel={homeLevel}
+        disabled={disabled}
       />
       {achievement && (
         <Achievement handleGetAchievement={handleGetAchievement} />
       )}
       {bag && <Bag bag={bag} />}
       {experience && <HomeExperience />}
-      {map && <Map map={map} />}
+      {map && <MapIcon map={map} />}
       {catIcon && <CatIcon catIcon={catIcon} />}
     </div>
   );

@@ -1,0 +1,9 @@
+.mock {
+  width: 100vw;
+  height: vh;
+}
+
+.mock img {
+  width: 100%;
+  height: 100%;
+}
