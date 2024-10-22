@@ -9,7 +9,7 @@ import {
   nightBusGameEnd,
 } from "../public/data/data";
 import Intro from "./pages/intro/Intro";
-import Video from "./pages/videoAnimation/video";
+import Video from "./pages/videoAnimation/Video";
 import Screen from "./pages/screenChange/Screen";
 import NightBusIntro from "./pages/nightBus/NightBusIntro";
 import NightBusEntry from "./pages/nightBus/NightBusEntry";
