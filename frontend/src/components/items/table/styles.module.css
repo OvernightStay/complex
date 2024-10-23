@@ -1,0 +1,10 @@
+.table {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-image: url("/assets/items/table.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}

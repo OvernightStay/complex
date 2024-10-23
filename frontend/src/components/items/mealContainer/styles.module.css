@@ -1,6 +1,13 @@
 .mealContainer {
+  position: absolute;
   width: 485px;
   height: 180px;
-  transform: translate(680px, 475px);
+  right: 510px;
+  bottom: 0;
+}
+
+.mealContainerWrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
 }

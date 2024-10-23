@@ -18,16 +18,17 @@
 .tea-container-1 {
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 .tea-container-2 {
-  bottom: 100px;
-  left: 100px;
+  bottom: 70px;
+  left: 80px;
 }
 
 .tea-container-3 {
   bottom: 10px;
-  right: 0;
+  right: 10px;
 }
 
 .meal-container-1 {
@@ -46,32 +47,32 @@
 }
 
 .bread-container-1 {
-  top: 0;
-  left: 0;
+  left: 50px;
+  bottom: 80px;
 }
 
 .bread-container-2 {
-  top: 20px;
-  left: 50px;
+  left: 100px;
+  bottom: 60px;
 }
 
 .bread-container-3 {
-  top: 40px;
-  left: 100px;
+  left: 150px;
+  bottom: 40px;
 }
 
 .meal-tray {
-  bottom: 20px;
-  left: 0;
+  bottom: 70px;
+  left: 70px;
 }
 
 .tea-tray {
-  bottom: -10px;
-  left: 100px;
+  bottom: 40px;
+  left: 120px;
   z-index: 1;
 }
 
 .bread-tray {
-  bottom: 0;
-  left: 160px;
+  bottom: 40px;
+  left: 173px;
 }

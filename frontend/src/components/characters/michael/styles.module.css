@@ -4,11 +4,11 @@
 }
 
 .middle {
-  left: 481px;
+  right: 40%;
 }
 
 .left {
-  left: 16px;
+  left: 14%;
 }
 
 .animate {
@@ -26,5 +26,24 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 1699px) {
+  .left {
+    left: 10%;
+  }
+}
+
+@media (max-width: 1599px) {
+  .left {
+    left: 8%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .left {
+    left: 5%;
+    bottom: 235px;
   }
 }

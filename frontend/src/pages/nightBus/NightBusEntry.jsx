@@ -15,11 +15,12 @@ export default function NightBusEntry({ data, step, setStep }) {
   return (
     <div className={`${s.nightBusContainer} ${s.nightBusEntry}`}>
       <NightBusEntryBackground step={step} />
+      {fliers && <Fliers />}
+
       <Settings />
       <Mud />
       <User speaking={position} />
       <Cat type="basic" position={false} speaking={position} />
-      {fliers && <Fliers />}
       <Dialogue
         data={data}
         step={step}

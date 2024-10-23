@@ -1,12 +1,13 @@
 .dialogueWrapper {
-  position: absolute;
+  position: relative;
   bottom: 20px;
-  left: 60px;
   width: 1320px;
+  /* bottom: 60px; */
   height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* left: 60px; */
 }
 
 .right {
@@ -84,6 +85,7 @@
   gap: 18px;
   font-size: 24px;
   font-weight: 400;
+  z-index: 10;
 }
 
 .question {

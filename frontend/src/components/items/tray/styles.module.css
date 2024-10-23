@@ -1,6 +1,9 @@
 .tray {
-  width: 325px;
-  height: 103px;
-  transform: translate(580px, 665px);
+  width: 370px;
+  height: 210px;
+  transform: translate(0px, -40px);
   position: relative;
+  background-image: url("/assets/items/tray.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

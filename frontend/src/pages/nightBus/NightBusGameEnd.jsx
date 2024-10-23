@@ -33,7 +33,9 @@ export default function NightBusGameEnd({
   }
 
   return (
-    <div className={`${s.nightBusGame} ${s.nightBusGamePlay} ${s.finalResult}`}>
+    <div
+      className={`${s.nightBusGame} ${s.nightBusGamePlay} ${s.finalResult} ${s.nightBusGameEnd}`}
+    >
       <Home level={level} homeIcon={homeIcon} />
       <Progress status="green" />
       <Book />

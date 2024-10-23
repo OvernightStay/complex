@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import s from "./styles.module.css";
-import TestComponent from "../../components/testComponent/TestComponent";
+import CharactersInline from "../../components/charactersInLine/CharactersInline";
+import CharactersContainer from "../../components/charactersInLine/CharactersContainer";
 import Kettle from "../../components/items/Kettle";
 import Tray from "../../components/items/tray/Tray";
 import TeaContainer from "../../components/items/teaContainer/TeaContainer";
@@ -13,6 +14,7 @@ import Result from "../../components/result/Result";
 import { useEffect, useState } from "react";
 import Settings from "../../components/settingsIcon/Settings";
 import FinalResult from "../../components/result/FinalResult";
+import Table from "../../components/items/table/Table";
 
 export default function NightBusGamePlay() {
   const initialCharacters = [
@@ -115,56 +117,64 @@ export default function NightBusGamePlay() {
       }`}
     >
       <Settings />
+
       {mood.length < 9 ? (
         <>
-          {characters.slice(0, 3).map((character, i) => (
-            <TestComponent
-              key={character}
-              name={character}
-              pos={i}
-              setTime={setTime}
-            />
-          ))}
+          <CharactersContainer>
+            {characters.slice(0, 3).map((character, i) => (
+              <CharactersInline
+                key={character}
+                name={character}
+                pos={i}
+                setTime={setTime}
+              />
+            ))}
+          </CharactersContainer>
 
-          <Kettle />
-          <Tray>
-            {items.includes("meal") && <Meal type="tray" />}
-            {items.includes("tea") && <Tea type="tray" />}
-            {items.includes("bread") && <Bread type="tray" />}
-          </Tray>
-          <TeaContainer>
-            {cups.map((cup) => (
-              <Tea
-                key={cup}
-                id={cup}
-                handlePickItem={handlePickCup}
-                type="container"
-                isTeaPicked={isTeaPicked}
-              />
-            ))}
-          </TeaContainer>
-          <MealContainer>
-            {meal.map((meal) => (
-              <Meal
-                key={meal}
-                id={meal}
-                handlePickItem={handlePickMeal}
-                type="container"
-                isMealPicked={isMealPicked}
-              />
-            ))}
-          </MealContainer>
-          <BreadContainer>
-            {bread.map((bread) => (
-              <Bread
-                key={bread}
-                id={bread}
-                handlePickItem={handlePickBread}
-                type="container"
-                isBreadPicked={isBreadPicked}
-              />
-            ))}
-          </BreadContainer>
+          <Table>
+            <Kettle />
+            <Tray>
+              {items.includes("meal") && <Meal type="tray" />}
+              {items.includes("tea") && <Tea type="tray" />}
+              {items.includes("bread") && <Bread type="tray" />}
+            </Tray>
+
+            <TeaContainer>
+              {cups.map((cup) => (
+                <Tea
+                  key={cup}
+                  id={cup}
+                  handlePickItem={handlePickCup}
+                  type="container"
+                  isTeaPicked={isTeaPicked}
+                />
+              ))}
+            </TeaContainer>
+
+            <MealContainer>
+              {meal.map((meal) => (
+                <Meal
+                  key={meal}
+                  id={meal}
+                  handlePickItem={handlePickMeal}
+                  type="container"
+                  isMealPicked={isMealPicked}
+                />
+              ))}
+            </MealContainer>
+
+            <BreadContainer>
+              {bread.map((bread) => (
+                <Bread
+                  key={bread}
+                  id={bread}
+                  handlePickItem={handlePickBread}
+                  type="container"
+                  isBreadPicked={isBreadPicked}
+                />
+              ))}
+            </BreadContainer>
+          </Table>
           <Result moodCount={moodCount} />
         </>
       ) : (

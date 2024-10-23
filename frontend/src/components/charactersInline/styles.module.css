@@ -1,0 +1,43 @@
+.charactersContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.charactersInline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 465px;
+  position: absolute;
+  bottom: 0;
+}
+
+.right {
+  right: 5%;
+}
+
+.left {
+  left: 5%;
+}
+
+.animate {
+  left: 37vw;
+  animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(7px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
