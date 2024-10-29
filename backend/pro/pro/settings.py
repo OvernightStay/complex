@@ -115,6 +115,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 CSRF_TRUSTED_ORIGINS = [
     "https://overnightapp.pythonanywhere.com/",
     "http://91.219.151.79:8000",
+    "130.193.35.237:8000",
 ]
 
 ROOT_URLCONF = "pro.urls"
