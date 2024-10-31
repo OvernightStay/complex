@@ -116,6 +116,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://overnightapp.pythonanywhere.com/",
     "http://91.219.151.79:8000",
     "http://130.193.35.237:8000",
+    "https://api.ipify.org/",
 ]
 
 ROOT_URLCONF = "pro.urls"
