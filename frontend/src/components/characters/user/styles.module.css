@@ -2,6 +2,7 @@
   position: absolute;
   bottom: 140px;
   right: 10%;
+  width: clamp(13.688rem, -3.578rem + 34.53vw, 27.5rem);
 }
 
 .animate {

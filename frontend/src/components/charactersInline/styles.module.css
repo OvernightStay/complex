@@ -15,6 +15,10 @@
   bottom: 0;
 }
 
+.characterInlineImg{
+  width: clamp(14.375rem, 4.554rem + 19.64vw, 28.125rem);
+}
+
 .right {
   right: 5%;
 }

@@ -1,7 +1,7 @@
 .dialogueWrapper {
   position: relative;
   bottom: 20px;
-  width: 1320px;
+  width: clamp(48rem, 4.875rem + 86.25vw, 82.5rem);
   /* bottom: 60px; */
   height: 300px;
   background-size: contain;
@@ -21,7 +21,7 @@
 .dialogue {
   position: relative;
   padding: 115px 30px 10px;
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -52,8 +52,8 @@
 
 .nextBtn {
   position: absolute;
-  bottom: 10px;
-  right: 25px;
+  bottom: calc(110px - 5vw);
+  right: 0;
 }
 
 .playBtn {
@@ -66,7 +66,7 @@
   background-color: #629f42;
   position: absolute;
   bottom: 15px;
-  right: 44px;
+  right: -70px;
 }
 
 .btn:hover {
@@ -98,4 +98,29 @@
   display: flex;
   align-items: center;
   gap: 16px;
+}
+@media (max-width:1150px) {
+  .text{
+    font-size: 20px;
+  }
+}
+@media (max-width:950px) {
+  .text{
+    font-size: 17px;
+  }
+}
+@media (max-width:1400px) {
+  .playBtn{
+    bottom:30px;
+  }
+}
+@media (max-width:1200px) {
+  .playBtn{
+    bottom:50px;
+  }
+}
+@media (max-width:1000px) {
+  .playBtn{
+    bottom:70px;
+  }
 }

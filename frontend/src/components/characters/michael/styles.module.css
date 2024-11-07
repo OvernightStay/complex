@@ -1,14 +1,17 @@
 .michael {
   position: absolute;
-  bottom: 242px;
+  bottom: 202px;
+  width: clamp(15rem, -1.484rem + 32.97vw, 28.188rem);
 }
 
 .middle {
   right: 40%;
+  bottom: 162px;
 }
 
 .left {
   left: 14%;
+  bottom: 162px;
 }
 
 .animate {
@@ -44,6 +47,6 @@
 @media (max-width: 1399px) {
   .left {
     left: 5%;
-    bottom: 235px;
+    bottom: 185px;
   }
 }

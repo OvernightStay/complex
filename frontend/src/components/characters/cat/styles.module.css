@@ -1,6 +1,7 @@
 .cat {
   position: absolute;
   bottom: 90px;
+  width: clamp(10.25rem, -2.328rem + 25.16vw, 20.313rem);
 }
 
 .animate {

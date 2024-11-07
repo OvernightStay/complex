@@ -1,11 +1,11 @@
 .breadContainer {
   position: absolute;
-  width: 360px;
+  width: clamp(16.875rem, 12.857rem + 8.04vw, 22.5rem);
   height: 202px;
   right: 90px;
   bottom: 100px;
   background-image: url("/assets/items/bread-container.svg");
-  background-size: cover;
+  background-size:contain  ;
   background-repeat: no-repeat;
 }
 
@@ -13,4 +13,9 @@
   position: relative;
   width: 100%;
   height: 100%;
+}
+@media (max-width:1150px) {
+  .breadContainer{
+    right: 20px;
+  }
 }

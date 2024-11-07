@@ -1,6 +1,6 @@
 .teaContainer {
   position: absolute;
-  width: 286px;
+  width: clamp(9.375rem, 3.304rem + 12.14vw, 17.875rem);
   height: 180px;
   left: 15vw;
   bottom: 100px;

@@ -13,22 +13,26 @@
   position: absolute;
   left: 14px;
   bottom: 158px;
+  width:clamp(9.375rem, 3.75rem + 11.25vw, 17.25rem);
 }
 
 .tea-container-1 {
-  bottom: 0;
-  left: 0;
+  bottom: 70px;
+  left: -20px;
   z-index: 1;
+  width:clamp(6.25rem, 3.661rem + 5.18vw, 9.875rem);
 }
 
 .tea-container-2 {
   bottom: 70px;
   left: 80px;
+  width:clamp(6.25rem, 3.661rem + 5.18vw, 9.875rem);
 }
 
 .tea-container-3 {
   bottom: 10px;
   right: 10px;
+  width:clamp(6.25rem, 3.661rem + 5.18vw, 9.875rem);
 }
 
 .meal-container-1 {
@@ -49,16 +53,19 @@
 .bread-container-1 {
   left: 50px;
   bottom: 80px;
+  width: clamp(6.813rem, 4.58rem + 4.46vw, 9.938rem);
 }
 
 .bread-container-2 {
   left: 100px;
   bottom: 60px;
+  width: clamp(6.813rem, 4.58rem + 4.46vw, 9.938rem);
 }
 
 .bread-container-3 {
   left: 150px;
   bottom: 40px;
+  width: clamp(6.813rem, 4.58rem + 4.46vw, 9.938rem);
 }
 
 .meal-tray {
@@ -75,4 +82,18 @@
 .bread-tray {
   bottom: 40px;
   left: 173px;
+}
+@media (max-width:1300px) {
+  .tea-container-1{
+    left:0px;
+  }
+  .bread-container-1{
+    bottom: 100px;
+  }
+  .bread-container-2{
+    bottom: 80px;
+  }
+  .bread-container-3{
+    bottom: 60px;
+  }
 }

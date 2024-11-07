@@ -21,7 +21,7 @@ export default function CharactersInline({ name, pos, setTime }) {
       } ${pos === 2 && s.left}`}
     >
       <ProgressBar />
-      <img src={`/assets/characters/${name}.svg`} alt={`${name} icon`} />
+      <img src={`/assets/characters/${name}.svg`} className={s.characterInlineImg} alt={`${name} icon`} />
     </div>
   );
 }
